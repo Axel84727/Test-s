@@ -1,12 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Efecto de desplazamiento suave al hacer clic en enlaces de navegación
-    const links = document.querySelectorAll('a[href^="#"]');
-    links.forEach(link => {
-        link.addEventListener('click', function(e) {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            targetElement.scrollIntoView({ behavior: 'smooth' });
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
         });
     });
 
@@ -17,4 +16,18 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('¡Has hecho clic en una imagen de la galería!');
         });
     });
+
+    const fogTop = document.createElement('div');
+    fogTop.className = 'fog fog-top';
+    document.body.appendChild(fogTop);
+
+    const fogBottom = document.createElement('div');
+    fogBottom.className = 'fog fog-bottom';
+    document.body.appendChild(fogBottom);
+
+    setTimeout(() => {
+        fogTop.classList.add('hidden');
+        fogBottom.classList.add('hidden');
+        document.body.style.overflow = 'auto'; // Permite el desplazamiento después de que la niebla se despeje
+    }, 3000); // 3 segundos antes de que la niebla se despeje
 });
