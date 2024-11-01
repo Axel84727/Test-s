@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explicación de Arrays</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <h1>¿Qué es un Array?</h1>
+    </header>
+    <main class="grid-container">
+        <section id="explicacion" class="grid-item">
+            <h2>Explicación</h2>
+            <p>Un array, o arreglo, es una estructura de datos fundamental en programación que permite almacenar múltiples elementos del mismo tipo (como números o cadenas) en una sola variable. Los elementos de un array se organizan en posiciones secuenciales (índices), y cada uno de estos índices permite acceder directamente a un elemento específico. Aquí tienes una explicación detallada y ejemplos de cómo se usan los arrays.</p>
+        </section>
+        <section id="caracteristicas" class="grid-item">
+            <h2>Características de un Array</h2>
+            <ul>
+                <li><strong>Estructura:</strong> Un array es una secuencia de elementos del mismo tipo, almacenados en posiciones consecutivas en la memoria.</li>
+                <li><strong>Índices:</strong> Cada elemento del array está asociado a un índice, comenzando desde el 0. Por ejemplo, en un array de cinco elementos, los índices van del 0 al 4.</li>
+                <li><strong>Acceso directo:</strong> El acceso a un elemento es rápido, ya que se puede acceder directamente al índice deseado, sin necesidad de recorrer toda la estructura.</li>
+                <li><strong>Uso común:</strong> Arrays se usan cuando se necesita almacenar una colección de datos relacionados, como nombres, números o incluso objetos.</li>
+            </ul>
+        </section>
+        <section id="tipos" class="grid-item">
+            <h2>Tipos de Arrays</h2>
+            <ul>
+                <li><strong>Unidimensionales:</strong> Es el tipo más básico, una lista de elementos. Ejemplo: una lista de nombres.</li>
+                <li><strong>Multidimensionales:</strong> Son arrays de arrays, como una tabla en dos dimensiones (matrices) o incluso en más dimensiones. Son útiles en problemas matemáticos y gráficos, entre otros.</li>
+                <li><strong>Dinámicos y Estáticos:</strong> Algunos lenguajes permiten arrays de tamaño fijo (estáticos) y otros permiten modificar el tamaño en tiempo de ejecución (dinámicos).</li>
+            </ul>
+        </section>
+        <section id="ventajas" class="grid-item">
+            <h2>Ventajas y Desventajas</h2>
+            <ul>
+                <li><strong>Ventajas:</strong>
+                    <ul>
+                        <li>Eficiencia en el acceso a elementos específicos usando índices.</li>
+                        <li>Organización clara de datos secuenciales.</li>
+                    </ul>
+                </li>
+                <li><strong>Desventajas:</strong>
+                    <ul>
+                        <li>Limitación de tamaño en arrays estáticos, que no permiten agregar más elementos.</li>
+                        <li>Complejidad en operaciones como agregar o eliminar elementos en medio del array.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="ejemplo" class="grid-item">
+            <h2>Ejemplo de Uso en Programación</h2>
+            <p>Supón que tienes un array de nombres: ["Ana", "Luis", "María", "Juan"]. Si quieres acceder al segundo nombre, solo tienes que usar el índice correspondiente (nombres[1]), que en este caso es "Luis".</p>
+            <p>Los arrays también permiten realizar operaciones, como recorrer la lista completa y ejecutar algo con cada elemento (un bucle), contar elementos, o incluso buscar valores específicos.</p>
+            <img src="images/example-image.jpg" alt="Ejemplo de Array">
+            <pre><code>
+int[] numeros = {1, 2, 3, 4, 5};
+for(int i = 0; i < numeros.length; i++) {
+    System.out.println(numeros[i]);
+}
+            </code></pre>
+        </section>
+        <section id="cuando-usar" class="grid-item">
+            <h2>Cuándo Usar un Array</h2>
+            <ul>
+                <li><strong>Listas de datos:</strong> Cuando tienes una lista de elementos relacionados y no necesitas cambiar su tamaño.</li>
+                <li><strong>Acceso rápido:</strong> Si necesitas acceder frecuentemente a elementos específicos por su posición.</li>
+                <li><strong>Recorrido secuencial:</strong> Los arrays son excelentes para recorrer y realizar operaciones repetitivas sobre sus elementos.</li>
+            </ul>
+        </section>
+        <section id="problema" class="grid-item">
+            <h2>Ejemplo de Problema Resuelto con Arrays</h2>
+            <p><strong>Problema:</strong> Almacenar las calificaciones de los estudiantes en una clase y calcular el promedio.</p>
+            <p><strong>Solución:</strong> Usas un array para almacenar las calificaciones de todos los estudiantes. Luego, recorres el array para sumar las calificaciones y divides el resultado por el número de elementos.</p>
+        </section>
+        <section id="ejemplos-practicos" class="grid-item">
+            <h2>Ejemplos Prácticos</h2>
+            <ul>
+                <li><strong>Array de números:</strong> Para representar precios de productos, temperaturas, etc.</li>
+                <li><strong>Array de cadenas:</strong> Para almacenar listas de nombres, direcciones o cualquier otro texto.</li>
+                <li><strong>Array multidimensional:</strong> Para modelar tablas, como una hoja de cálculo con filas y columnas.</li>
+            </ul>
+        </section>
+        <section id="consejos" class="grid-item">
+            <h2>Consejos al Trabajar con Arrays</h2>
+            <ul>
+                <li>Define el tamaño exacto si es posible para evitar desperdicio de memoria (en el caso de arrays estáticos).</li>
+                <li>Usa arrays cuando sepas de antemano cuántos elementos almacenarás.</li>
+                <li>Asegúrate de acceder siempre a índices válidos, ya que ir más allá de los límites del array puede causar errores.</li>
+            </ul>
+        </section>
+        <section id="alternativas" class="grid-item">
+            <h2>Alternativas a los Arrays</h2>
+            <p>Si necesitas una estructura que permita cambios de tamaño dinámicos, otras opciones pueden ser listas vinculadas o listas dinámicas (como ArrayList en Java). Aunque los arrays son rápidos en acceso, estructuras dinámicas pueden ser más flexibles en algunos casos.</p>
+        </section>
+        <section id="diferentes-lenguajes" class="grid-item">
+            <h2>Arrays en Diferentes Lenguajes de Programación</h2>
+            <p>Agrega una descripción breve sobre cómo se manejan los arrays en diferentes lenguajes como Python, Java, C++ y JavaScript. Describe cómo se declaran, acceden y modifican, mostrando las diferencias entre ellos.</p>
+            <pre><code>
+// Python
+arr = [1, 2, 3, 4, 5]
+
+// Java
+int[] arr = {1, 2, 3, 4, 5};
+
+// C++
+int arr[] = {1, 2, 3, 4, 5};
+
+// JavaScript
+let arr = [1, 2, 3, 4, 5];
+            </code></pre>
+        </section>
+        <section id="operaciones-comunes" class="grid-item">
+            <h2>Operaciones Comunes en Arrays</h2>
+            <p>Describe los métodos para buscar elementos en un array, como la búsqueda secuencial y binaria, y en qué tipo de arrays es más eficiente cada uno.</p>
+            <p>Explica cómo añadir y eliminar elementos en un array, incluyendo las limitaciones de los arrays estáticos y cómo estos procedimientos funcionan en arrays dinámicos.</p>
+            <p>Habla de métodos comunes de ordenación, como Bubble Sort y Quick Sort, y su uso en arrays.</p>
+            <p>Explica cómo recorrer un array utilizando bucles (`for`, `while`) y muestra cómo esta técnica permite realizar operaciones en cada elemento.</p>
+        </section>
+        <section id="multidimensionales" class="grid-item">
+            <h2>Arrays Multidimensionales</h2>
+            <p>Explica qué son los arrays multidimensionales y cómo se usan. Por ejemplo, podrías describir cómo se comporta un array bidimensional o "matriz" y para qué tipos de problemas son útiles.</p>
+            <pre><code>
+// Java - Array Bidimensional
+int[][] matriz = {
+    {1, 2, 3},
+    {4, 5, 6},
+    {7, 8, 9}
+};
+            </code></pre>
+        </section>
+        <section id="dinamicos-estaticos" class="grid-item">
+            <h2>Arrays Dinámicos vs Estáticos</h2>
+            <p>Describe las diferencias entre arrays de tamaño fijo (estáticos) y de tamaño dinámico. Explica cómo los arrays estáticos requieren que el tamaño sea definido al inicio, mientras que los arrays dinámicos pueden cambiar su tamaño durante la ejecución (como las listas en Python o `ArrayList` en Java).</p>
+        </section>
+        <section id="base-estructuras" class="grid-item">
+            <h2>Arrays como Base para Otras Estructuras de Datos</h2>
+            <p>Explica cómo los arrays son la base de estructuras más avanzadas como pilas y colas. Por ejemplo, en una pila implementada con arrays, se puede usar un índice que se incrementa o decrementa para simular la operación de "apilar" y "desapilar" elementos.</p>
+        </section>
+        <section id="uso-practico" class="grid-item">
+            <h2>Uso Práctico de Arrays en Aplicaciones Reales</h2>
+            <p>Menciona algunos usos prácticos de los arrays en el mundo real, como su aplicación en juegos para representar el estado de un tablero, en bases de datos para almacenar registros secuenciales, o en aplicaciones científicas para manejar grandes conjuntos de datos.</p>
+        </section>
+        <section id="ejercicios" class="grid-item">
+            <h2>Ejercicios Prácticos</h2>
+            <ul>
+                <li>Crear un array y llenar sus elementos.</li>
+                <li>Encontrar el valor máximo o mínimo en un array.</li>
+                <li>Sumar todos los elementos de un array.</li>
+                <li>Revertir el orden de un array.</li>
+            </ul>
+        </section>
+        <section id="optimizacion" class="grid-item">
+            <h2>Conceptos Avanzados: Arrays en Optimización de Rendimiento</h2>
+            <p>Menciona cómo el acceso directo a elementos en arrays ofrece una ventaja de rendimiento en comparación con otras estructuras de datos más complejas. Describe el tiempo constante de acceso (`O(1)`) en operaciones de lectura y cómo esto los hace especialmente útiles en aplicaciones que requieren velocidad.</p>
+        </section>
+        <section id="consejos" class="grid-item">
+            <h2>Consejos para Trabajar con Arrays</h2>
+            <ul>
+                <li>Define el tamaño exacto del array para evitar desperdicio de memoria (si se usa un array estático).</li>
+                <li>Utiliza funciones de biblioteca, si están disponibles, para operaciones comunes como ordenación o búsqueda.</li>
+                <li>Comprende bien el índice de cada elemento para evitar errores fuera de los límites (`out-of-bounds`).</li>
+            </ul>
+        </section>
+    </main>
+    <section id="playground">
+        <h2>Playground</h2>
+        <div class="playground-container">
+            <div class="input-container">
+                <h3>Crear Array</h3>
+                <input type="text" id="array-input" placeholder="Ingresa números separados por comas">
+                <button id="create-array-btn">Crear Array</button>
+                <pre id="array-output"></pre>
+            </div>
+        </div>
+    </section>
+    <div id="overlay" class="overlay">
+        <div class="overlay-content">
+            <span class="close-btn">&times;</span>
+            <div id="overlay-text"></div>
+        </div>
+    </div>
+    <script src="scripts/animations.js"></script>
+</body>
+</html>
